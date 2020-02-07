@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+  * @category  Technodom
+  * @package   Technodom\GTM
+  * @author    Rihards Stasans <info@scandiweb.com>
+  * @copyright Copyright (c) 2019 Scandiweb, Inc (https://scandiweb.com)
+  * @license   http://opensource.org/licenses/OSL-3.0 The Open Software License 3.0 (OSL-3.0)
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <default>
+        <pwa_gtm>
+            <general>
+                <enabled>0</enabled>
+                <gtm_id>GTM-000000</gtm_id>
+                <gtm_data_layer>dataLayer</gtm_data_layer>
+                <gtm_auth></gtm_auth>
+                <gtm_preview></gtm_preview>
+                <debug>0</debug>
+            </general>
+            <promotions>
+                <mapping>{"_1566821635347_347":{"page":"homepage","type":"1","element":"MainBanner","element_type":"1"},"_1566821685111_111":{"page":"homepage","type":"2","element":"MultipleSlider-Promo","element_type":"1"}}</mapping>
+            </promotions>
+        </pwa_gtm>
+    </default>
+</config>
