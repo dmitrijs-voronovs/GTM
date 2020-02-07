@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+  * @category  ScandiPWA
+  * @package   ScandiPWA\Gtm
+  * @author    Rihards Stasans <info@scandiweb.com>
+ * @author    Dmitrijs Voronovs <info@scandiweb.com>
+  * @copyright Copyright (c) 2019 Scandiweb, Inc (https://scandiweb.com)
+  * @license   http://opensource.org/licenses/OSL-3.0 The Open Software License 3.0 (OSL-3.0)
+  -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="pwa_gtm" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>PWA Google Tag Manager</label>
+            <tab>scandiweb</tab>
+            <resource>ScandiPWA_Gtm::gtm_configuration</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>General Configuration</label>
+
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="gtm_id" translate="label" type="text" sortOrder="30" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Gtm id (Gtm-000000)</label>
+                    <comment>Account to push events</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

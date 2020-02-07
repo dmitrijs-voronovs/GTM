@@ -1,3 +1,3 @@
-# Technodom_GTM
+# ScandiPWA_Gtm
 
-The ScandiPWA GTM backend
+The ScandiPWA Gtm backend
